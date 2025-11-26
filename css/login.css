@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #bfbfbf;
+}
+
+.topo {
+    background-color: #000;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topo img {
+    height: 80px;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 120px);
+}
+
+.caixa-login {
+    background-color: #bfbfbf;
+    padding: 40px 60px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.caixa-login h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input {
+    width: 280px;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 8px;
+    padding: 6px 10px;
+}
+
+.btn-entrar {
+    width: 180px;
+    height: 40px;
+    margin-top: 30px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.link-cadastro {
+    margin-top: 20px;
+    text-align: center;
+}
