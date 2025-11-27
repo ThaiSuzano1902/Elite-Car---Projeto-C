@@ -1,73 +1,92 @@
-* {
-    box-sizing: border-box;
+:root{
+    --bg:#0a0a0a;
+    --gold:#d4af37;
+    --white:#ffffff;
+    --muted:#bdbdbd;
+    --card:#0f0f0f;
 }
 
-body {
-    margin: 0;
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+    background:var(--bg);
+    color:var(--white);
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #bfbfbf;
 }
 
-.topo {
-    background-color: #000;
-    height: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Logo no topo */
+.top-logo img{
+    width:220px;
+    display:block;
+    margin:30px auto 10px auto;
 }
 
-.topo img {
-    height: 80px;
+/* Card de login */
+.login-container{
+    width:90%;
+    max-width:400px;
+    margin:20px auto;
 }
 
-.conteudo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: calc(100vh - 120px);
+.login-card{
+    background:var(--card);
+    padding:24px;
+    border-radius:12px;
+    border:1px solid rgba(212,175,55,0.06);
+    display:flex;
+    flex-direction:column;
+    gap:12px;
 }
 
-.caixa-login {
-    background-color: #bfbfbf;
-    padding: 40px 60px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+.login-card h2{
+    text-align:center;
+    margin-bottom:10px;
+    color:var(--gold);
 }
 
-.caixa-login h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 24px;
+.login-card label{
+    font-size:14px;
+    color:var(--white);
 }
 
-label {
-    display: block;
-    margin-top: 15px;
-    font-weight: bold;
+.login-card input{
+    padding:10px;
+    border-radius:6px;
+    border:none;
+    outline:none;
+    background:#1b1b1b;
+    color:var(--white);
+    font-size:15px;
 }
 
-input {
-    width: 280px;
-    height: 35px;
-    border-radius: 8px;
-    border: none;
-    margin-top: 8px;
-    padding: 6px 10px;
+.login-card button{
+    margin-top:10px;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:transparent;
+    border:2px solid var(--gold);
+    color:var(--white);
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
 }
 
-.btn-entrar {
-    width: 180px;
-    height: 40px;
-    margin-top: 30px;
-    background-color: #000;
-    color: #fff;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
+.login-card button:hover{
+    background:var(--gold);
+    color:#000;
 }
 
-.link-cadastro {
-    margin-top: 20px;
-    text-align: center;
+.muted{
+    text-align:center;
+    margin-top:8px;
+    color:var(--muted);
+}
+
+.muted a{
+    color:var(--gold);
+    text-decoration:none;
+}
+
+.muted a:hover{
+    text-decoration:underline;
 }

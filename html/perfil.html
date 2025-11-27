@@ -1,65 +1,74 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../css/perfil.css" />
     <title>Elite Car - Perfil</title>
-    <link rel="stylesheet" href="../css/perfil.css">
 </head>
 <body>
-<header class="topo">
-    <div class="logo">
-        <!-- <img src="../img/LOGO-ELITE-CAR.png" alt="Elite Car Multimarcas"> -->
-    </div>
-    <nav class="menu">
-        <a href="comprar.html">COMPRAR</a>
-        <a href="financiamento.html">FINANCIAMENTO</a>
-        <a href="loja.html">LOJA</a>
-        <a href="perfil.html">PERFIL</a>
-        <a href="sobre.html">SOBRE</a>
+    <!-- NAV PADRÃO -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="../img/logo.png" alt="Elite Car - Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="comprar.html">Comprar</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="perfil.html" class="active">Perfil</a></li>
+                <li><a class="btn-sair" href="login.html">Sair</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Abrir menu">☰</button>
+        </div>
     </nav>
-</header>
 
-<main class="conteudo">
-    <section class="perfil">
-        <div class="avatar">
-            <!-- Aqui pode usar um ícone de usuário redondo -->
-            <!-- <img src="../img/ICON-PERFIL.png" alt="Ícone de perfil"> -->
+    <main class="container">
+        <section class="profile-card">
+            <div class="profile-photo">
+                <img src="../img/tela4/user-placeholder.png" alt="Foto do usuário">
+            </div>
+            <div class="profile-info">
+                <h2>Jhonatan Quispe</h2>
+                <p class="muted">jhonatan@example.com · (11) 9XXXX-XXXX</p>
+
+                <div class="info-grid">
+                    <div>
+                        <strong>Favoritos</strong>
+                        <p>5 veículos salvos</p>
+                    </div>
+                    <div>
+                        <strong>Compras</strong>
+                        <p>0 compras</p>
+                    </div>
+                    <div>
+                        <strong>Endereço</strong>
+                        <p>São Paulo - SP</p>
+                    </div>
+                </div>
+
+                <div class="profile-actions">
+                    <a class="btn-primary" href="#">Editar perfil</a>
+                    <a class="btn-outline" href="#">Meus anúncios</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER PADRÃO -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>Elite Car Multimarcas © 2025 - Todos os direitos reservados</p>
+            <small>Privacidade · Termos · Ajuda</small>
         </div>
-        <div class="dados">
-            <h2>PERFIL</h2>
-            <label>Nome:</label>
-            <input type="text">
+    </footer>
 
-            <label>Email:</label>
-            <input type="text">
-
-            <label>Senha:</label>
-            <input type="password">
-        </div>
-    </section>
-
-    <section class="faixa">
-        <h3>Saiba Mais Sobre Nós:</h3>
-    </section>
-
-    <section class="texto-final">
-        <p>
-            Projeto Final realizado por estudantes da Universidade Uninove,
-            utilizando o conteúdo deste semestre 25.2
-        </p>
-    </section>
-</main>
-
-<footer class="rodape">
-    <div class="info-endereco">
-        Endereço: Rua Antonio Olivar, 367 - Vila Olímpia, 010203-356
-    </div>
-    <div class="info-centro">
-        VENHA NOS CONHECER!
-    </div>
-    <div class="info-cnpj">
-        CNPJ: XXXX-XXXX-XX
-    </div>
-</footer>
+    <script>
+        const btn = document.querySelector('.nav-toggle');
+        const links = document.querySelector('.nav-links');
+        btn?.addEventListener('click', () => {
+            links.classList.toggle('open');
+        });
+    </script>
 </body>
 </html>

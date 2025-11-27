@@ -1,32 +1,35 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Elite Car - Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/login.css">
+    <title>Elite Car - Login</title>
 </head>
+
 <body>
-    <header class="topo">
-        <!-- LOGO -->
-        <!-- <img src="../img/LOGO-ELITE-CAR.png" alt="Elite Car Multimarcas"> -->
+
+    <header class="top-logo">
+        <img src="../img/logo.png" alt="Elite Car Logo">
     </header>
 
-    <main class="conteudo">
-        <section class="caixa-login">
-            <h2>Já possui uma conta?</h2>
+    <main class="login-container">
+        <form class="login-card">
+            <h2>Entrar</h2>
 
-            <label>Login</label>
-            <input type="text" placeholder="Digite seu login">
+            <label>Email</label>
+            <input type="email" placeholder="Digite seu email" required>
 
-            <label>Password</label>
-            <input type="password" placeholder="Digite sua senha">
+            <label>Senha</label>
+            <input type="password" placeholder="Digite sua senha" required>
 
-            <button class="btn-entrar">ENTRAR</button>
+            <button class="btn-primary" type="submit">Entrar</button>
 
-            <p class="link-cadastro">
-                Ainda não possui conta? <a href="cadastro.html">Cadastre-se</a>
+            <p class="muted">Não tem conta?
+                <a href="cadastro.html">Criar conta</a>
             </p>
-        </section>
+        </form>
     </main>
+
 </body>
 </html>

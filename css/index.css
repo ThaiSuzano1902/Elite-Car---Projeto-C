@@ -1,87 +1,167 @@
-* {
-    box-sizing: border-box;
+:root{
+    --bg:#0a0a0a;
+    --gold:#d4af37;
+    --white:#ffffff;
+    --muted:#bdbdbd;
+    --card:#111;
 }
 
-body {
-    margin: 0;
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+    background:var(--bg);
+    color:var(--white);
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #bfbfbf;
 }
 
-.topo {
-    background-color: #000;
-    height: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* -------------------- HERO MODERNO -------------------- */
+.hero{
+    position:relative;
+    height:85vh;
+    background:linear-gradient(120deg, #000000, #0a0a0a, #1a1a1a);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:20px;
+    overflow:hidden;
 }
 
-.topo img {
-    height: 80px;
+.overlay{
+    position:absolute;
+    inset:0;
+    background: radial-gradient(circle at bottom, rgba(212,175,55,0.25), transparent 70%);
 }
 
-.principal {
-    display: flex;
-    padding: 40px 80px;
-    min-height: calc(100vh - 160px);
+.hero-logo{
+    width:240px;
+    margin-bottom:15px;
 }
 
-.texto {
-    flex: 1;
-    padding-right: 40px;
+.hero-content{
+    position:relative;
+    max-width:600px;
+    animation: fadeIn 1.2s ease forwards;
 }
 
-.texto h1 {
-    font-size: 32px;
-    margin-bottom: 20px;
+.hero-content h1{
+    font-size:34px;
+    color:var(--gold);
+    margin-bottom:10px;
 }
 
-.texto p {
-    font-size: 18px;
-    line-height: 1.5;
-    margin-bottom: 10px;
+.hero-content p{
+    color:var(--muted);
+    font-size:18px;
+    margin-bottom:25px;
 }
 
-.botoes {
-    margin-top: 30px;
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:18px;
 }
 
-.btn {
-    display: inline-block;
-    text-decoration: none;
-    padding: 12px 30px;
-    margin-right: 15px;
-    border-radius: 6px;
-    font-weight: bold;
-    text-transform: uppercase;
+.btn-primary,
+.btn-outline{
+    padding:12px 25px;
+    border-radius:8px;
+    font-size:16px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.2s;
 }
 
-.btn.entrar {
-    background-color: #000;
-    color: #fff;
+.btn-primary{
+    border:2px solid var(--gold);
+    background:transparent;
+    color:var(--white);
 }
 
-.btn.cadastrar {
-    background-color: #f2c21a;
-    color: #000;
+.btn-primary:hover{
+    background:var(--gold);
+    color:#000;
 }
 
-.imagem-destaque {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.btn-outline{
+    border:2px solid rgba(255,255,255,0.2);
+    background:transparent;
+    color:var(--white);
 }
 
-.imagem-destaque img {
-    max-width: 100%;
-    border-radius: 10px;
+.btn-outline:hover{
+    border-color:var(--gold);
+    color:var(--gold);
 }
 
-.rodape {
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    padding: 12px;
-    font-size: 14px;
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+/* -------------------- DESTAQUES -------------------- */
+.destaques{
+    text-align:center;
+    padding:40px 20px;
+}
+
+.destaques h2{
+    color:var(--gold);
+    margin-bottom:5px;
+}
+
+.destaques p{
+    color:var(--muted);
+    margin-bottom:25px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:20px;
+    padding:20px 0;
+}
+
+.card{
+    background:var(--card);
+    padding:18px;
+    border-radius:10px;
+    border:1px solid rgba(212,175,55,0.15);
+    transition:.2s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    border-color:var(--gold);
+}
+
+/* -------------------- BENEFICIOS -------------------- */
+.beneficios{
+    padding:40px 20px 70px;
+}
+
+.beneficios h2{
+    text-align:center;
+    color:var(--gold);
+    margin-bottom:20px;
+}
+
+.beneficios ul{
+    max-width:500px;
+    margin:0 auto;
+    list-style:none;
+    padding-left:0;
+}
+
+.beneficios li{
+    background:var(--card);
+    margin-bottom:12px;
+    padding:12px;
+    border-radius:8px;
+    border:1px solid rgba(212,175,55,0.15);
+    transition:.2s;
+}
+
+.beneficios li:hover{
+    transform:translateX(6px);
+    border-color:var(--gold);
 }

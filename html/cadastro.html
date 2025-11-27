@@ -1,38 +1,38 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Elite Car - Cadastro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/cadastro.css">
+    <title>Elite Car - Cadastro</title>
 </head>
+
 <body>
-    <header class="topo">
-        <!-- LOGO -->
-        <!-- <img src="../img/LOGO-ELITE-CAR.png" alt="Elite Car Multimarcas"> -->
+
+    <header class="top-logo">
+        <img src="../img/logo.png" alt="Elite Car Logo">
     </header>
 
-    <main class="conteudo">
-        <section class="caixa-cadastro">
-            <h2 class="titulo-cadastro">Cadastre-se!!</h2>
+    <main class="cadastro-container">
+        <form class="cadastro-card">
+            <h2>Criar conta</h2>
 
-            <label>Nome</label>
-            <input type="text">
+            <label>Nome completo</label>
+            <input type="text" placeholder="Ex: Jhonatan Quispe" required>
 
-            <label>Email ou Telefone</label>
-            <input type="text">
+            <label>Email</label>
+            <input type="email" placeholder="Digite seu email" required>
 
             <label>Senha</label>
-            <input type="password">
+            <input type="password" placeholder="Crie uma senha" required>
 
-            <label>Repetir Senha</label>
-            <input type="password">
+            <button class="btn-primary" type="submit">Cadastrar</button>
 
-            <button class="btn-cadastrar">CADASTRAR</button>
-
-            <p class="link-login">
-                Já possui conta? <a href="login.html">Faça login</a>
+            <p class="muted">Já tem conta?
+                <a href="login.html">Entrar</a>
             </p>
-        </section>
+        </form>
     </main>
+
 </body>
 </html>

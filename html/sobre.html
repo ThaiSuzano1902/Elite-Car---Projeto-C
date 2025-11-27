@@ -1,54 +1,68 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../css/sobre.css" />
     <title>Elite Car - Sobre</title>
-    <link rel="stylesheet" href="../css/sobre.css">
 </head>
 <body>
-<header class="topo">
-    <div class="logo">
-        <!-- <img src="../img/LOGO-ELITE-CAR.png" alt="Elite Car Multimarcas"> -->
-    </div>
-    <nav class="menu">
-        <a href="comprar.html">COMPRAR</a>
-        <a href="financiamento.html">FINANCIAMENTO</a>
-        <a href="loja.html">LOJA</a>
-        <a href="perfil.html">PERFIL</a>
-        <a href="sobre.html">SOBRE</a>
+    <!-- NAV PADRÃO -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="../img/logo.png" alt="Elite Car - Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="comprar.html">Comprar</a></li>
+                <li><a href="sobre.html" class="active">Sobre</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+                <li><a class="btn-sair" href="login.html">Sair</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Abrir menu">☰</button>
+        </div>
     </nav>
-</header>
 
-<main class="conteudo">
-    <section class="bloco grande">
-        <h2>PROJETO SEMESTRAL</h2>
-        <!-- Texto explicando o projeto pode ser colocado aqui -->
-    </section>
+    <main class="container">
+        <section class="about">
+            <h1>Sobre a Elite Car</h1>
+            <p class="lead">A Elite Car é uma concessionária multimarcas dedicada a oferecer veículos de qualidade, confiança e as melhores condições do mercado.</p>
 
-    <section class="linha">
-        <div class="bloco">
-            <h3>OBJETIVO</h3>
+            <div class="two-col">
+                <div>
+                    <h3>Nossa missão</h3>
+                    <p>Proporcionar uma experiência transparente, segura e financeiramente justa para quem busca um veículo.</p>
+                </div>
+                <div>
+                    <h3>Nossa visão</h3>
+                    <p>Ser referência regional em atendimento, qualidade e pós-venda.</p>
+                </div>
+            </div>
+
+            <h3>Nossos valores</h3>
+            <ul class="values">
+                <li>Transparência</li>
+                <li>Compromisso</li>
+                <li>Qualidade</li>
+                <li>Atendimento personalizado</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- FOOTER PADRÃO -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>Elite Car Multimarcas © 2025 - Todos os direitos reservados</p>
+            <small>Visite nossa loja · Atendimento de segunda a sábado</small>
         </div>
-        <div class="bloco">
-            <h3>O QUE APLICAMOS</h3>
-        </div>
-    </section>
+    </footer>
 
-    <section class="bloco grande">
-        <h3>INTEGRANTES</h3>
-    </section>
-</main>
-
-<footer class="rodape">
-    <div class="info-endereco">
-        Endereço: Rua Antonio Olivar, 367 - Vila Olímpia, 010203-356
-    </div>
-    <div class="info-centro">
-        VENHA NOS CONHECER!
-    </div>
-    <div class="info-cnpj">
-        CNPJ: XXXX-XXXX-XX
-    </div>
-</footer>
+    <script>
+        const btn = document.querySelector('.nav-toggle');
+        const links = document.querySelector('.nav-links');
+        btn?.addEventListener('click', () => {
+            links.classList.toggle('open');
+        });
+    </script>
 </body>
 </html>

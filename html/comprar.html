@@ -1,60 +1,78 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../css/comprar.css" />
     <title>Elite Car - Comprar</title>
-    <link rel="stylesheet" href="../css/comprar.css">
 </head>
 <body>
-    <header class="topo">
-        <div class="logo">
-            <!-- <img src="../img/LOGO-ELITE-CAR.png" alt="Elite Car Multimarcas"> -->
+    <!-- NAV PADRÃO -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="../img/logo.png" alt="Elite Car - Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="comprar.html" class="active">Comprar</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+                <li><a class="btn-sair" href="login.html">Sair</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Abrir menu">☰</button>
         </div>
-        <nav class="menu">
-            <a href="comprar.html">COMPRAR</a>
-            <a href="financiamento.html">FINANCIAMENTO</a>
-            <a href="loja.html">LOJA</a>
-            <a href="perfil.html">PERFIL</a>
-            <a href="sobre.html">SOBRE</a>
-        </nav>
-    </header>
+    </nav>
 
-    <main class="conteudo">
-        <!-- Cada bloco abaixo representa um card de veículo,
-             como na imagem MacBook Air - 2 -->
-        <section class="card">
-            <div class="info">
-                <h3>COMMANDER 1.3 T</h3>
-                <ul>
-                    <li>80 MIL KM</li>
-                    <li>280 CAVALOS</li>
-                    <li>CONSUMO</li>
-                    <li>6,0 KM/L CDD</li>
-                    <li>12,0 KM/L ETDA</li>
-                </ul>
-                <button>COMPRAR</button>
-                <span class="preco">R$ 100.200 à vista</span>
-            </div>
-            <div class="foto">
-                <!-- IMAGEM DO COMMANDER BRANCO -->
-                <!-- <img src="../img/COMMANDER-BRANCO.png" alt="Commander 1.3 T branco"> -->
-            </div>
+    <main class="container">
+        <header class="page-header">
+            <h1>Comprar</h1>
+            <p>Encontre seu próximo veículo com as melhores ofertas.</p>
+        </header>
+
+        <section class="cards">
+            <!-- Exemplos de cartões de carros; substitua pelo conteúdo real -->
+            <article class="card">
+                <img src="../img/img_carros/car1.jpg" alt="Carro 1" class="card-img" />
+                <div class="card-body">
+                    <h3>Modelo Exemplo A</h3>
+                    <p>Ano · Quilometragem · Combustível</p>
+                    <div class="card-actions">
+                        <span class="price">R$ 45.000</span>
+                        <a class="btn-primary" href="#">Ver detalhes</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="../img/img_carros/car2.jpg" alt="Carro 2" class="card-img" />
+                <div class="card-body">
+                    <h3>Modelo Exemplo B</h3>
+                    <p>Ano · Quilometragem · Combustível</p>
+                    <div class="card-actions">
+                        <span class="price">R$ 78.500</span>
+                        <a class="btn-primary" href="#">Ver detalhes</a>
+                    </div>
+                </div>
+            </article>
+            <!-- Fim exemplos -->
         </section>
-
-        <!-- Repita cards semelhantes para os outros carros
-             (Santa Fé, Doblo, Commander vermelho, Vectra, Lancer etc.) -->
     </main>
 
-    <footer class="rodape">
-        <div class="info-endereco">
-            Endereço: Rua Antonio Olivar, 367 - Vila Olímpia, 010203-356
-        </div>
-        <div class="info-centro">
-            VENHA NOS CONHECER!
-        </div>
-        <div class="info-cnpj">
-            CNPJ: XXXX-XXXX-XX
+    <!-- FOOTER PADRÃO -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>Elite Car Multimarcas © 2025 - Todos os direitos reservados</p>
+            <small>Contato: contato@elitecar.com.br · (11) 99999-9999</small>
         </div>
     </footer>
+
+    <script>
+        // Toggle simples para mobile
+        const btn = document.querySelector('.nav-toggle');
+        const links = document.querySelector('.nav-links');
+        btn?.addEventListener('click', () => {
+            links.classList.toggle('open');
+        });
+    </script>
 </body>
 </html>
