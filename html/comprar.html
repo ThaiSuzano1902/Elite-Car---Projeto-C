@@ -25,40 +25,89 @@
 
     <main class="container">
         <header class="page-header">
-            <h1>Comprar</h1>
-            <p>Encontre seu próximo veículo com as melhores ofertas.</p>
+            <h1>Estoque de Veículos</h1>
+            <p>Carros selecionados com o melhor custo-benefício da região.</p>
         </header>
 
+        <!-- GRID: 3 fileiras / 2 itens por linha -->
         <section class="cards">
-            <!-- Exemplos de cartões de carros; substitua pelo conteúdo real -->
+
             <article class="card">
-                <img src="../img/img_carros/car1.jpg" alt="Carro 1" class="card-img" />
+                <img src="../img/img carros/Astra img.png" alt="Astra" class="card-img" />
                 <div class="card-body">
-                    <h3>Modelo Exemplo A</h3>
-                    <p>Ano · Quilometragem · Combustível</p>
+                    <h3>Chevrolet Astra</h3>
+                    <p>2008 · 145.000 km · Gasolina</p>
                     <div class="card-actions">
-                        <span class="price">R$ 45.000</span>
+                        <span class="price">R$ 28.900</span>
                         <a class="btn-primary" href="#">Ver detalhes</a>
                     </div>
                 </div>
             </article>
 
             <article class="card">
-                <img src="../img/img_carros/car2.jpg" alt="Carro 2" class="card-img" />
+                <img src="../img/img carros/Comander.png" alt="Commander" class="card-img" />
                 <div class="card-body">
-                    <h3>Modelo Exemplo B</h3>
-                    <p>Ano · Quilometragem · Combustível</p>
+                    <h3>Jeep Commander</h3>
+                    <p>2022 · 22.000 km · Flex</p>
                     <div class="card-actions">
-                        <span class="price">R$ 78.500</span>
+                        <span class="price">R$ 198.500</span>
                         <a class="btn-primary" href="#">Ver detalhes</a>
                     </div>
                 </div>
             </article>
-            <!-- Fim exemplos -->
+
+            <article class="card">
+                <img src="../img/img carros/Doblo Img.png" alt="Doblo" class="card-img" />
+                <div class="card-body">
+                    <h3>Fiat Doblò</h3>
+                    <p>2014 · 120.000 km · Flex</p>
+                    <div class="card-actions">
+                        <span class="price">R$ 45.900</span>
+                        <a class="btn-primary" href="#">Ver detalhes</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="../img/img carros/Lancer.png" alt="Lancer" class="card-img" />
+                <div class="card-body">
+                    <h3>Mitsubishi Lancer</h3>
+                    <p>2017 · 89.000 km · Gasolina</p>
+                    <div class="card-actions">
+                        <span class="price">R$ 72.900</span>
+                        <a class="btn-primary" href="#">Ver detalhes</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="../img/img carros/Santafe img.png" alt="Santa Fé" class="card-img" />
+                <div class="card-body">
+                    <h3>Hyundai Santa Fé</h3>
+                    <p>2016 · 95.000 km · V6 Gasolina</p>
+                    <div class="card-actions">
+                        <span class="price">R$ 108.300</span>
+                        <a class="btn-primary" href="#">Ver detalhes</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="../img/img carros/Vectra img.png" alt="Vectra" class="card-img" />
+                <div class="card-body">
+                    <h3>Chevrolet Vectra</h3>
+                    <p>2010 · 130.000 km · Flex</p>
+                    <div class="card-actions">
+                        <span class="price">R$ 32.700</span>
+                        <a class="btn-primary" href="#">Ver detalhes</a>
+                    </div>
+                </div>
+            </article>
+
         </section>
     </main>
 
-    <!-- FOOTER PADRÃO -->
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="footer-container">
             <p>Elite Car Multimarcas © 2025 - Todos os direitos reservados</p>
@@ -67,12 +116,12 @@
     </footer>
 
     <script>
-        // Toggle simples para mobile
         const btn = document.querySelector('.nav-toggle');
         const links = document.querySelector('.nav-links');
         btn?.addEventListener('click', () => {
             links.classList.toggle('open');
         });
     </script>
+
 </body>
 </html>
