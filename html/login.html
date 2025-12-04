@@ -14,7 +14,7 @@
     </header>
 
     <main class="login-container">
-        <form class="login-card">
+        <form class="login-card" onsubmit="return false;">
             <h2>Entrar</h2>
 
             <label>Email</label>
@@ -23,7 +23,11 @@
             <label>Senha</label>
             <input type="password" placeholder="Digite sua senha" required>
 
-            <button class="btn-primary" type="submit">Entrar</button>
+            <!-- Botão funcionando corretamente -->
+            <button class="btn-primary" type="button"
+                onclick="window.location.href='comprar.html'">
+                Entrar
+            </button>
 
             <p class="muted">Não tem conta?
                 <a href="cadastro.html">Criar conta</a>
