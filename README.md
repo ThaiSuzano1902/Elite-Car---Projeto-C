@@ -30,11 +30,7 @@ O ELITE CAR aplica, de forma integrada:
 Atende aos requisitos mínimos solicitados pelo professor:
 
 ✔ Cadasto  
-✔ Listar veículos  
-✔ Buscar por modelo  
 ✔ Atualizar dados  
-✔ Marcar como vendido  
-✔ Remover veículo *(opcional)*  
 
 > Todas as operações do back-end são realizadas exclusivamente via **terminal**.
 
